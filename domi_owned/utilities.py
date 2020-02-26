@@ -73,7 +73,7 @@ class Utilities(object):
 		Check for valid base URL.
 		"""
 		if self.URL_REGEX.search(url):
-			return self.URL_REGEX.search(url).group(1)
+			return url
 		else:
 			self.logger.error('Invalid URL provided')
 			sys.exit()
